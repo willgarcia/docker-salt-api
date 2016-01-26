@@ -1,4 +1,4 @@
-# salt-test
+# salt-api-test
 
 Test to trigger a system event (service restart) via [Reactor/ZeroMQ](https://docs.saltstack.com/en/develop/topics/reactor/index.html) & the salt [rest_cherrypy api](https://docs.saltstack.com/en/latest/ref/netapi/all/index.html)
 
