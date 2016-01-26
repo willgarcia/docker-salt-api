@@ -16,12 +16,15 @@ salt-master -l debug
 Stop any system service:
 
 ```
-/etc/init.d/httpd stop
+salt '*' service.stop httpd
 ```
 
 ```
 curl -skv -H "Accept: application/json" -d tgt='*' -d service="httpd" -d  -k https://127.0.0.1:8080/hook/services/restart
 ```
 
+```
+salt '*' service.status httpd
+```
 Expected: httpd should be started now, http code 200, response: {"success": true}
 
